@@ -1,0 +1,17 @@
+<h1>Add Product</h1>
+<form [formGroup]="myform" (ngSubmit)="onSubmit()" >
+  <div class="form-group">
+    <label >id</label>
+    <input formControlName="id" type="number" class="form-control" id="id" placeholder="Id">
+  </div>
+  <div class="form-group">
+    <label >title</label>
+    <input formControlName="title" type="text" class="form-control" id="title" placeholder="Title">
+  </div>
+  <div class="form-group">
+    <label>status</label>
+    <input formControlName="status" type="text" class="form-control" id="status" placeholder="Status">
+  </div>
+
+  <button type="submit" class="btn btn-default" [disabled]="!myform.valid" >Submit</button>
+</form>

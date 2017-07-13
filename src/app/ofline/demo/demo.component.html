@@ -1,0 +1,37 @@
+
+<h3 class="col-sm-8">Calc two way</h3>
+<div appHilighterDirective [hilighterColor]="'blue'">
+  miloni shah pagal nathi
+</div>
+<br>
+ <div class="col-sm-8">
+    <input type="number" name="no1" class="form-control" placeholder="Enter number" [(ngModel)]="no1">
+  </div>
+  <br><br>
+<div class="col-sm-8">
+    <input type="number" name="no2" class="form-control" placeholder="Enter number" [(ngModel)]="no2">
+  </div>
+<br><br><br>
+<div class="col-sm-offset-2 col-sm-10">
+      <button class="btn btn-default" (click)="onAdd()">Add</button>
+    </div>
+<br>
+<br>
+<h3 class="col-sm-8">{{sum}}</h3>
+<br>
+<br>
+<h3 class="col-sm-8">Calc one way</h3>
+<br>
+<div class="col-sm-8">
+    <input type="number" name="input1" class="form-control" placeholder="Enter number" #input1 >
+  </div>
+<br><br>
+<div class="col-sm-8">
+    <input type="number" name="input2" class="form-control" placeholder="Enter number" #input2 >
+  </div><br><br><br>
+  <div class="col-sm-offset-2 col-sm-10">
+      <button class="btn btn-default" (click)="onSum(input1.value,input2.value)">Add</button>
+    </div>
+<br><br>
+<br>
+<h3 class="col-sm-8">{{ans}}</h3>

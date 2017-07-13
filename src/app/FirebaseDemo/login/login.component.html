@@ -1,0 +1,28 @@
+<h1>Sign up with firebase</h1>
+<form [formGroup]="myform" (ngSubmit)="onSubmit()" >
+  <div class="form-group">
+    <label >email</label>
+    <input formControlName="email" type="email" class="form-control" id="email" placeholder="email">
+  </div>
+  <div [hidden]="myform.controls.email.valid || myform.controls.email.pristine"
+
+class="alert alert-danger">
+Email invalid
+
+</div>
+  <div class="form-group">
+    <label >password</label>
+    <input formControlName="password" type="password" class="form-control" id="password" placeholder="password">
+  </div>
+<div [hidden]="myform.controls.password.valid || myform.controls.password.pristine"
+
+class="alert alert-danger">
+Password invalid
+
+</div>
+
+  <button type="submit" class="btn btn-default" [disabled]="!myform.valid" >Submit</button>
+
+<button type="submit" class="btn btn-default" [disabled]="!myform.valid" (click)="onLogin()" >login</button>
+</form>
+

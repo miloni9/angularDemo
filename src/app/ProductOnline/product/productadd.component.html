@@ -1,0 +1,24 @@
+<h1>Add Product</h1>
+
+
+<form [formGroup]="myform" (ngSubmit)="onSubmit()" >
+  <div class="form-group">
+    <label >name</label>
+    <input formControlName="pname" type="text" class="form-control" id="pname" placeholder="p name">
+  </div>
+  <div class="form-group">
+    <label >image</label>
+    <input formControlName="pimg" type="text" class="form-control" id="pimg" placeholder="p image">
+  </div>
+  <div class="form-group">
+    <label>price</label>
+    <input formControlName="pprice" type="number" class="form-control" id="pprice" placeholder="p price">
+  </div>
+ <div class="form-group">
+    <label>soh</label>
+    <input formControlName="soh" type="number" class="form-control" id="soh" placeholder="soh">
+  </div>
+  <button type="submit" class="btn btn-default" [disabled]="!myform.valid" >Submit</button>
+</form>
+
+

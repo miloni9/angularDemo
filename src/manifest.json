@@ -1,0 +1,13 @@
+{
+  "name": "Miloni shah",
+  "short_name": "Miloni",
+  "icons": [
+    {
+      "src": "assets/mili.png",
+      "sizes": "192x192",
+      "type": "image\/png"
+    }
+  ],
+  "display": "standalone",
+  "start_url": "./?utm_source=web_app_manifest"
+}
